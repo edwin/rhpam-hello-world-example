@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_DcueUKGCEeqdLpQCFlSvfw" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_tuHAUKGCEeqdLpQCFlSvfw" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_userItem" structureRef="com.edw.project01.User"/>
   <bpmn2:itemDefinition id="__17A2DCA2-29CC-4A14-8397-C238C13F2FB3_namespaceInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__17A2DCA2-29CC-4A14-8397-C238C13F2FB3_modelInputXItem" structureRef="java.lang.String"/>
@@ -56,7 +56,7 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_A65E23A4-6E90-444A-ABBE-DD898952393D</bpmn2:incoming>
       <bpmn2:outgoing>_2ACB81A1-C535-4A64-8244-4F62FE933458</bpmn2:outgoing>
-      <bpmn2:script><![CDATA[com.edw.project01.User _user = (com.edw.project01.User ) kcontext.getVariable("user");
+      <bpmn2:script><![CDATA[com.edw.project01.User _user = (com.edw.project01.User ) kcontext.getVariable("application");
 System.out.println("Processing : " + _user.getName());
 
 _user.setSuccess(false);
@@ -86,21 +86,21 @@ System.out.println("Status for User is FAIL:  " + _user.getFailed());]]></bpmn2:
       </bpmn2:extensionElements>
       <bpmn2:incoming>_2ACB81A1-C535-4A64-8244-4F62FE933458</bpmn2:incoming>
       <bpmn2:outgoing>_40290498-0FF3-4A03-9034-DB573BEBB347</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_DcvFYKGCEeqdLpQCFlSvfw">
+      <bpmn2:ioSpecification id="_tuHAUaGCEeqdLpQCFlSvfw">
         <bpmn2:dataInput id="_17A2DCA2-29CC-4A14-8397-C238C13F2FB3_userInputX" drools:dtype="com.edw.project01.User" itemSubjectRef="__17A2DCA2-29CC-4A14-8397-C238C13F2FB3_userInputXItem" name="user"/>
         <bpmn2:dataOutput id="_17A2DCA2-29CC-4A14-8397-C238C13F2FB3_userOutputX" drools:dtype="com.edw.project01.User" itemSubjectRef="__17A2DCA2-29CC-4A14-8397-C238C13F2FB3_userOutputXItem" name="user"/>
-        <bpmn2:inputSet id="_DcvFYaGCEeqdLpQCFlSvfw">
+        <bpmn2:inputSet id="_tuHAUqGCEeqdLpQCFlSvfw">
           <bpmn2:dataInputRefs>_17A2DCA2-29CC-4A14-8397-C238C13F2FB3_userInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_DcvFYqGCEeqdLpQCFlSvfw">
+        <bpmn2:outputSet id="_tuHAU6GCEeqdLpQCFlSvfw">
           <bpmn2:dataOutputRefs>_17A2DCA2-29CC-4A14-8397-C238C13F2FB3_userOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_DcvFY6GCEeqdLpQCFlSvfw">
+      <bpmn2:dataInputAssociation id="_tuHAVKGCEeqdLpQCFlSvfw">
         <bpmn2:sourceRef>user</bpmn2:sourceRef>
         <bpmn2:targetRef>_17A2DCA2-29CC-4A14-8397-C238C13F2FB3_userInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_DcvFZKGCEeqdLpQCFlSvfw">
+      <bpmn2:dataOutputAssociation id="_tuHAVaGCEeqdLpQCFlSvfw">
         <bpmn2:sourceRef>_17A2DCA2-29CC-4A14-8397-C238C13F2FB3_userOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>user</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -112,8 +112,8 @@ System.out.println("Status for User is FAIL:  " + _user.getFailed());]]></bpmn2:
       <bpmn2:outgoing>_A65E23A4-6E90-444A-ABBE-DD898952393D</bpmn2:outgoing>
     </bpmn2:startEvent>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_DcvFZaGCEeqdLpQCFlSvfw">
-    <bpmndi:BPMNPlane id="_DcvFZqGCEeqdLpQCFlSvfw" bpmnElement="Project01.Business01">
+  <bpmndi:BPMNDiagram id="_tuHAVqGCEeqdLpQCFlSvfw">
+    <bpmndi:BPMNPlane id="_tuHAV6GCEeqdLpQCFlSvfw" bpmnElement="Project01.Business01">
       <bpmndi:BPMNShape id="shape__50C84743-8E97-4B3C-A6F9-B488487470CB" bpmnElement="_50C84743-8E97-4B3C-A6F9-B488487470CB">
         <dc:Bounds height="56.0" width="56.0" x="167.0" y="166.0"/>
       </bpmndi:BPMNShape>
@@ -147,39 +147,19 @@ System.out.println("Status for User is FAIL:  " + _user.getFailed());]]></bpmn2:
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_DcvFZ6GCEeqdLpQCFlSvfw" type="BPSimData">
+  <bpmn2:relationship id="_tuHAWKGCEeqdLpQCFlSvfw" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_50C84743-8E97-4B3C-A6F9-B488487470CB" id="_DcvFaKGCEeqdLpQCFlSvfw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_50C84743-8E97-4B3C-A6F9-B488487470CB" id="_tuHAWaGCEeqdLpQCFlSvfw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_17A2DCA2-29CC-4A14-8397-C238C13F2FB3" id="_DcvFaaGCEeqdLpQCFlSvfw">
-            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
-              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
-                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
-              </bpsim:ProcessingTime>
-            </bpsim:TimeParameters>
-            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
-              <bpsim:Availability xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:Availability>
-              <bpsim:Quantity xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:Quantity>
-            </bpsim:ResourceParameters>
-            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
-              <bpsim:UnitCost xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:UnitCost>
-            </bpsim:CostParameters>
-          </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_ED68C9CC-DBE1-435A-ACDE-84A4694913F8" id="_DcvFaqGCEeqdLpQCFlSvfw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_17A2DCA2-29CC-4A14-8397-C238C13F2FB3" id="_tuHAWqGCEeqdLpQCFlSvfw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -199,7 +179,27 @@ System.out.println("Status for User is FAIL:  " + _user.getFailed());]]></bpmn2:
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_8A09FA64-B539-4E58-A81E-265CC694C8D5" id="_DcvFa6GCEeqdLpQCFlSvfw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_ED68C9CC-DBE1-435A-ACDE-84A4694913F8" id="_tuHAW6GCEeqdLpQCFlSvfw">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_8A09FA64-B539-4E58-A81E-265CC694C8D5" id="_tuHAXKGCEeqdLpQCFlSvfw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -222,7 +222,7 @@ System.out.println("Status for User is FAIL:  " + _user.getFailed());]]></bpmn2:
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_DcueUKGCEeqdLpQCFlSvfw</bpmn2:source>
-    <bpmn2:target>_DcueUKGCEeqdLpQCFlSvfw</bpmn2:target>
+    <bpmn2:source>_tuHAUKGCEeqdLpQCFlSvfw</bpmn2:source>
+    <bpmn2:target>_tuHAUKGCEeqdLpQCFlSvfw</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
