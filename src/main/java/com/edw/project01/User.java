@@ -9,11 +9,14 @@ public class User implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Name")
+	@org.kie.api.definition.type.Label("Name")
 	private java.lang.String name;
 
-	@org.kie.api.definition.type.Label(value = "Age")
+	@org.kie.api.definition.type.Label("Age")
 	private java.lang.Integer age;
+
+	@org.kie.api.definition.type.Label(value = "RegistrationStatus")
+	private boolean registrationstatus;
 
 	public User() {
 	}
@@ -34,9 +37,19 @@ public class User implements java.io.Serializable {
 		this.age = age;
 	}
 
-	public User(java.lang.String name, java.lang.Integer age) {
+	public boolean isRegistrationstatus() {
+		return this.registrationstatus;
+	}
+
+	public void setRegistrationstatus(boolean registrationstatus) {
+		this.registrationstatus = registrationstatus;
+	}
+
+	public User(java.lang.String name, java.lang.Integer age,
+			boolean registrationstatus) {
 		this.name = name;
 		this.age = age;
+		this.registrationstatus = registrationstatus;
 	}
 
 }
