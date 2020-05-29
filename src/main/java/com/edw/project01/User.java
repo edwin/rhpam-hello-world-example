@@ -15,8 +15,11 @@ public class User implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Age")
 	private java.lang.Integer age;
 
-	@org.kie.api.definition.type.Label(value = "RegistrationStatus")
-	private boolean registrationstatus;
+	@org.kie.api.definition.type.Label(value = "Registration Success")
+	private java.lang.Boolean success;
+
+	@org.kie.api.definition.type.Label(value = "Registration Fail")
+	private java.lang.Boolean failed;
 
 	public User() {
 	}
@@ -37,19 +40,28 @@ public class User implements java.io.Serializable {
 		this.age = age;
 	}
 
-	public boolean isRegistrationstatus() {
-		return this.registrationstatus;
+	public java.lang.Boolean getSuccess() {
+		return this.success;
 	}
 
-	public void setRegistrationstatus(boolean registrationstatus) {
-		this.registrationstatus = registrationstatus;
+	public void setSuccess(java.lang.Boolean success) {
+		this.success = success;
+	}
+
+	public java.lang.Boolean getFailed() {
+		return this.failed;
+	}
+
+	public void setFailed(java.lang.Boolean failed) {
+		this.failed = failed;
 	}
 
 	public User(java.lang.String name, java.lang.Integer age,
-			boolean registrationstatus) {
+			java.lang.Boolean success, java.lang.Boolean failed) {
 		this.name = name;
 		this.age = age;
-		this.registrationstatus = registrationstatus;
+		this.success = success;
+		this.failed = failed;
 	}
 
 }
