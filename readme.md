@@ -1,4 +1,4 @@
-Repository Init Content
+Red Hat Process Automation Manager Example
 =======================
 
-Your project description here.
+A simple workflow for displaying how RHPAM works. 

@@ -11,14 +11,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>repo-custom</id>
-        <url>http://nexus-pam.apps.erfin-cluster.sandbox1811.opentlc.com/repository/pam-hosted/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>local</id>
         <url>/home/jboss/.m2/repository</url>
         <source>LOCAL</source>
