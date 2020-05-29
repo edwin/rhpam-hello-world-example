@@ -7,29 +7,36 @@ package com.edw.project01;
 @javax.persistence.Entity
 public class User implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "USER_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "USER_ID_GENERATOR", sequenceName = "USER_ID_SEQ")
-    private java.lang.Long id;
+	@org.kie.api.definition.type.Label(value = "Name")
+	private java.lang.String name;
 
-    public User() {
-    }
-    
-    public User(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "Age")
+	private java.lang.Integer age;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	public User() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
 
+	public java.lang.Integer getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.Integer age) {
+		this.age = age;
+	}
+
+	public User(java.lang.String name, java.lang.Integer age) {
+		this.name = name;
+		this.age = age;
+	}
 
 }
