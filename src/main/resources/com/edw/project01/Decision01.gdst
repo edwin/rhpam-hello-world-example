@@ -2,11 +2,11 @@
   <tableName>Decision01</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
@@ -18,7 +18,7 @@
       <conditions>
         <org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>Age less than</header>
           <constraintValueType>1</constraintValueType>
           <factField>age</factField>
@@ -34,7 +34,7 @@
         </org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
         <org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>Age more than</header>
           <constraintValueType>1</constraintValueType>
           <factField>age</factField>
@@ -50,7 +50,7 @@
         </org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
         <org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>Name not Empty</header>
           <constraintValueType>1</constraintValueType>
           <factField>name</factField>
@@ -93,14 +93,7 @@
     <entries/>
   </auditLog>
   <imports>
-    <imports>
-      <org.kie.soup.project.datamodel.imports.Import>
-        <type>java.lang.Integer</type>
-      </org.kie.soup.project.datamodel.imports.Import>
-      <org.kie.soup.project.datamodel.imports.Import>
-        <type>java.lang.String</type>
-      </org.kie.soup.project.datamodel.imports.Import>
-    </imports>
+    <imports/>
   </imports>
   <packageName>com.edw.project01</packageName>
   <tableFormat>LIMITED_ENTRY</tableFormat>
@@ -108,9 +101,9 @@
   <data>
     <list>
       <value>
-        <valueNumeric>1</valueNumeric>
+        <valueNumeric class="int">1</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -139,9 +132,9 @@
     </list>
     <list>
       <value>
-        <valueNumeric>2</valueNumeric>
+        <valueNumeric class="int">2</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -160,9 +153,9 @@
     </list>
     <list>
       <value>
-        <valueNumeric>3</valueNumeric>
+        <valueNumeric class="int">3</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -181,9 +174,9 @@
     </list>
     <list>
       <value>
-        <valueNumeric>4</valueNumeric>
+        <valueNumeric class="int">4</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -197,9 +190,9 @@
     </list>
     <list>
       <value>
-        <valueNumeric>5</valueNumeric>
+        <valueNumeric class="int">5</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -218,9 +211,9 @@
     </list>
     <list>
       <value>
-        <valueNumeric>6</valueNumeric>
+        <valueNumeric class="int">6</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -234,9 +227,9 @@
     </list>
     <list>
       <value>
-        <valueNumeric>7</valueNumeric>
+        <valueNumeric class="int">7</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -250,9 +243,9 @@
     </list>
     <list>
       <value>
-        <valueNumeric>8</valueNumeric>
+        <valueNumeric class="int">8</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
